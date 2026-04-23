@@ -8,7 +8,6 @@ import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 import { Button } from "@mui/material";
 
-
 function ProductList({product}) {
 
   useEffect(() => {
@@ -32,7 +31,7 @@ function ProductList({product}) {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await axios.get(`http://localhost:4000/api/products`);
+        const res = await axios.get(`${import.meta.env.VITE_BASE_PORT}/api/products`);
         setAllProducts(res.data);
 
         const matched = res.data.filter((prod) => prod.category?.slug === categorySlug);

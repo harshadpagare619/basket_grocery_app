@@ -32,12 +32,12 @@ function ProductDetails() {
   useEffect(() => {
     const fetchProducts = async() => {
       try {
-        const res = await axios.get(`http://localhost:4000/api/products/${id}`);
+        const res = await axios.get(`${import.meta.env.VITE_BASE_PORT}/api/products/${id}`);
       
         setProductData(res.data);
         setSelectedImages(res.data.images?.[0]);
 
-        const productsList = await axios.get(`http://localhost:4000/api/products`);
+        const productsList = await axios.get(`${import.meta.env.VITE_BASE_PORT}/api/products`);
         setAllProducts(productsList.data);
 
       } catch (error) {
