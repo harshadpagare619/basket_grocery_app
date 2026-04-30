@@ -1,12 +1,64 @@
-# React + Vite
+# 🛒 Basket - Grocery Delivery Web App (Frontend)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Basket is a modern grocery delivery web application inspired by platforms like Blinkit, Zepto, Amazon, etc.  
+It allows users to browse products by category, add items to cart, manage cart quantities, and place orders using Razorpay payment integration.
 
-Currently, two official plugins are available:
+This repository contains the **frontend (customer-side)** of the Basket Grocery App.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Live Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🔗 Frontend Live: https://basketwebapp.vercel.app/
+
+---
+
+## 📌 Features
+
+### 👤 User Features
+- User Signup & Login (JWT Authentication)
+- Guest users can browse products and add to cart
+- Category-based product listing
+- Dynamic product pages
+- Add to cart / remove from cart / quantity update
+- Cart total price calculation with discounted prices
+- Checkout page with billing form
+- Razorpay payment gateway integration
+- Order placement & order creation in database
+- Orders history for logged-in users
+
+### 🛍️ Product Features
+- Products displayed with pricing (price & discount price)
+- Products organized by Category and Subcategory
+- Featured products section on homepage
+- Search products by name / brand / category (if implemented)
+
+### 🎨 UI/UX Features
+- Smooth navigation using React Router
+- Responsive design
+- Reusable components like AddToCart button
+
+---
+
+## 🛠️ Tech Stack
+
+**Frontend:**
+- React.js (Vite)
+- Redux Toolkit
+- React Router DOM
+- Axios
+- Bootstrap 4
+- Material UI Icons
+
+**Payment:**
+- Razorpay Integration
+
+---
+
+## ⚙️ Installation & Setup (Frontend)
+
+Clone the repository:
+
+```bash
+git clone https://github.com/harshadpagare619/basket_grocery_app.git
+cd basket-frontend
