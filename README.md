@@ -55,6 +55,11 @@ This repository contains the **frontend (customer-side)** of the Basket Grocery 
 
 ---
 
+👨‍💻 Author
+
+Harshad Pagare
+🔗 LinkedIn: https://www.linkedin.com/in/harshad-pagare-1a571161/
+
 ## ⚙️ Installation & Setup (Frontend)
 
 Clone the repository:
